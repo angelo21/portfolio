@@ -1,0 +1,222 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #e4e4e4;
+}
+
+/********** navigation **********/
+
+#container {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav ul {
+    background-color: #980013;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2vw;
+    height: 70px;
+}
+
+nav li {
+    margin-right: 7%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a, header {
+    color: white;
+}
+
+/********** header **********/
+
+.header_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #b30027;
+    text-align: center;
+}
+
+.header_name p {
+    font-size: 8vw;
+}
+
+.header_text {
+    margin-top: 10px;
+}
+
+.header_text p {
+    font-size: 3vw;
+    color: #999999;
+}
+
+/********** main content **********/
+
+/********** profile **********/
+
+.profile_container, .portfolio_container, .contact_container {
+    text-align: center;
+    font-size: 30px;
+    color: #444444;
+    margin-top: 20px;
+}
+
+.profile_container {
+	margin-top: 50px;
+}
+
+.inner_profile_container, .inner_contact_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+}
+
+.skills_profile, .working_knowledge_profile, .software_profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 33.3%;
+    border-right: 1px solid lightgray;
+}
+
+.software_profile {
+    border-right: none;
+}
+
+.skills_profile i, .working_knowledge_profile i, .software_profile i {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+/********* projects **********/
+.portfolio_container {
+	margin-top: 50px;
+}
+
+.portfolio_projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.portfolio_width {
+    width: 50%;
+}
+
+.portfolio_projects img  {
+    padding: 10px;
+    width: 100%;
+}
+.portfolio_projects img a {
+    width: 50%;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    height: 50px;
+    position: relative;
+    bottom: 65px;
+    left: 10px;
+    opacity: .8;
+    width: calc(100% - 20px);
+}
+
+figcaption p {
+    line-height: 50px;
+}
+
+/********** contact **********/
+
+.contact_container {
+    background-color: #999999;
+    padding-top: 40px;
+}
+
+.inner_contact_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.social_media a {
+    color: #444444;
+}
+.social_media i {
+    margin: 20px;
+}
+
+
+/********** media queries **********/
+
+@media screen and (max-width: 768px) {
+    .inner_profile_container {
+        display: block;
+    }
+    .skills_profile, .working_knowledge_profile, .software_profile {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+        border-right: none;
+    }
+    .skills_profile i, .working_knowledge_profile i, .software_profile i {
+        margin: 15px;
+    }
+    .skills_profile p, .working_knowledge_profile p, .software_profile p {
+        margin-bottom: 25px;
+    }
+    nav ul {
+        font-size: 3vw;
+    }
+    .portfolio_projects {
+        display: block;
+    }
+    .portfolio_width {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
