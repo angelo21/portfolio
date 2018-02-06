@@ -1,0 +1,18 @@
+.heading {
+
+  &--large {
+    color: $color-dark-gray-3;
+    padding-bottom: 10rem;
+    font-size: 5rem;
+    text-align: center;
+
+    //UNDERLINE
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: .4rem solid currentColor;
+      width: 12rem;
+      margin: 0 auto;
+    }
+  }
+}

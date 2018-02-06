@@ -1,0 +1,16 @@
+//STYLES FOR FONT ICONS
+.icon {
+  display: flex;
+  justify-content: space-around;
+  
+  
+  & a {
+    color: $color-white;
+    font-size: 4rem;
+    transition: all .4s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
