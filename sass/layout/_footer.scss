@@ -1,0 +1,23 @@
+.footer {
+  @include section;
+  background-color: $color-dark-gray;
+  -webkit-clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -12rem;
+
+  & h2 {
+    color: $color-white;
+    margin-top: 4rem;
+  }
+
+  &__info {
+    width: 30rem;
+    margin: 0 auto;
+  }
+
+  &__email {
+    @include email;
+    color: $color-white;
+    text-align: center;
+  }
+}

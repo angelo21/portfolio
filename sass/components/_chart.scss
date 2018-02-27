@@ -1,0 +1,70 @@
+.chart {
+  width: 60rem;
+  padding: 0 2rem;
+
+  &__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: $color-light-gray-3;
+  }
+
+  &__row:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    background-color: $color-light-blue;
+    width: 20%;
+    color: $color-white;
+    display: inline-block;
+    height: 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: .5rem 2rem;
+  }
+
+  &__fill {
+    &--html {
+      width: 70%;
+    }
+
+    &--css {
+      width: 60%;
+    }
+
+    &--js {
+      width: 60%;
+    }
+
+    &--jq {
+      width: 30%;
+    }
+
+    &--react {
+      width: 20%;
+    }
+
+    &--boot {
+      width: 50%;
+    }
+
+    &--git {
+      width: 60%;
+    }
+
+    &--sql {
+      width: 20%;
+    }
+
+    &--scss {
+      width: 60%;
+    }
+  }
+}
+
+.fill {
+  background-color: $color-dark-blue;
+}
+
+
