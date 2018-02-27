@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //NAME IN HEADER ANIMATION
 @keyframes scale {
   0% {
@@ -7,4 +8,15 @@
   100% {
     transform: scale(1);
   }
+=======
+//NAME IN HEADER ANIMATION
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+>>>>>>> db12f2b573c5cbce502f20346628466e3d40b68b
 }

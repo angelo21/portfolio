@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .header {
   height: 125vh;
@@ -104,3 +105,111 @@
 }
 
 
+=======
+
+.header {
+  height: 125vh;
+  text-align: center;
+  position: relative;
+
+  @include medium {
+    height: 100vh;
+  }
+
+  &__video {
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+
+    & video {
+      opacity: .6;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: $color-white;
+    opacity: 1;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+
+    &--hidden {
+      opacity: 0;
+    }
+  }
+
+  &__name {
+    font-size: 6rem;
+    font-weight: 300;
+    animation: scale 1s cubic-bezier(.03, .87, .49, 1.57);
+  }
+
+  &__develop {
+    font-size: 4rem;
+    font-weight: 300;
+    padding: 2rem;
+  }
+
+  &__email {
+    @include email;
+  }
+
+  &__nav {
+    -webkit-transform: translateY(-7rem);
+            transform: translateY(-7rem);
+    padding: 1rem 0;
+    
+
+    &--sticky {
+      position: fixed;
+      top: 7rem;
+      width: 100%;
+      padding: 1.5rem 0;
+      background-color: rgba($color-black, .9);
+      z-index: 1000;
+    }
+    & a:link,
+    & a:visited {
+     text-decoration: none;
+     font-size: 2rem;
+     font-weight: 300;
+     text-transform: uppercase;
+     color: $color-white;
+
+     &:hover::after {
+       color: currentColor;
+       -webkit-transform: translateY(.5rem);
+               transform: translateY(.5rem);
+     }
+   }
+
+   & a:link::after,
+   & a:visited::after {
+     content: "";
+     display: block;
+     border-bottom: 2px solid currentColor;
+     -webkit-transform: translateY(3rem);
+             transform: translateY(3rem);
+     color: transparent;
+     -webkit-transition: all .3s;
+     transition: all .3s;
+   }
+
+  }
+
+  &__nav ul{
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+   }
+}
+
+
+>>>>>>> db12f2b573c5cbce502f20346628466e3d40b68b
