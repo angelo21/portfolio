@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .heading {
 
   &--large {
@@ -16,23 +15,8 @@
       margin: 0 auto;
     }
   }
-=======
-.heading {
+}
 
-  &--large {
-    color: $color-dark-gray-3;
-    padding-bottom: 10rem;
-    font-size: 5rem;
-    text-align: center;
-
-    //UNDERLINE
-    &::after {
-      content: "";
-      display: block;
-      border-bottom: .4rem solid currentColor;
-      width: 12rem;
-      margin: 0 auto;
-    }
-  }
->>>>>>> db12f2b573c5cbce502f20346628466e3d40b68b
+.u-mb-m {
+  margin-bottom: 2rem;
 }

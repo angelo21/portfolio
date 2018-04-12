@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //STYLES FOR FONT ICONS
 .icon {
   display: flex;
@@ -14,21 +13,4 @@
       transform: scale(1.2);
     }
   }
-=======
-//STYLES FOR FONT ICONS
-.icon {
-  display: flex;
-  justify-content: space-around;
-  
-  
-  & a {
-    color: $color-white;
-    font-size: 4rem;
-    transition: all .4s;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
->>>>>>> db12f2b573c5cbce502f20346628466e3d40b68b
 }
