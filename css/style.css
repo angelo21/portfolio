@@ -256,6 +256,9 @@ body {
 .chart {
   width: 60rem;
   padding: 0 2rem; }
+  @media screen and (max-width: 30em) {
+    .chart {
+      width: 50rem; } }
   .chart__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -272,6 +275,9 @@ body {
     font-size: 1.6rem;
     font-weight: bold;
     padding: .5rem 2rem; }
+    @media screen and (max-width: 30em) {
+      .chart__name {
+        font-size: 1.4rem; } }
   .chart__fill--html {
     width: 70%; }
   .chart__fill--css {
