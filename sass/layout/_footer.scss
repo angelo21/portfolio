@@ -36,4 +36,8 @@
     border: 1px solid $color-white;
     outline: none;
   }
+
+  &__form-submit {
+    cursor: pointer;
+  }
 }

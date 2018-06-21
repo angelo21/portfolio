@@ -218,6 +218,8 @@
     color: #fefefe;
     border: 1px solid #fefefe;
     outline: none; }
+  .footer__form-submit {
+    cursor: pointer; }
 
 .heading--large {
   color: #454758;
