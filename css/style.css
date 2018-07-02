@@ -287,11 +287,11 @@ body {
   .chart__fill--js {
     width: 60%; }
   .chart__fill--jq {
-    width: 30%; }
-  .chart__fill--react {
     width: 20%; }
+  .chart__fill--vue {
+    width: 60%; }
   .chart__fill--boot {
-    width: 50%; }
+    width: 40%; }
   .chart__fill--git {
     width: 60%; }
   .chart__fill--sql {
